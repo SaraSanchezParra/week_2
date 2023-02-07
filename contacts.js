@@ -5,14 +5,16 @@ class Contacts {
     constructor(){
         this.contactos = []
     }
+    printPersons(){
+     for (let i = 0; i < this.contactos.length; i++){
+            console.log (this.contactos[i]);
+        }
+    }
 }
 
-//Crear un método llamado printPersons que imprima cada uno de los atributos de cada objeto Person.
-// for (propiedad in {Person}) {
-//     console.log (propiedad);
-//     console.log({Person}[prop])
-// }
 
+
+//Crear un método llamado printPersons que imprima cada uno de los atributos de cada objeto Person.
 
 module.exports = {Contacts};
 

@@ -14,11 +14,11 @@ juan.hobbies =['Nadar','Jugar'];
 let agenda = new Contacts();
 agenda.contactos.push(ana)
 agenda.contactos.push(juan) //es lo mismo que utilizar ,,console.log(agenda.contactos),,;
+agenda.printPersons();
 
-
-for (let i=0; i<agenda.contactos.length; i++){
-    console.log(agenda.contactos[i]);
-}
+// for (let i=0; i<agenda.contactos.length; i++){
+//     console.log(agenda.contactos[i]);
+// }
 
 // • Crear un objeto de la clase Contacts y probar todos sus atributos y métodos.
 // • Sube todos los cambios a tu rama “dia1” y después haz ”merge” con tu rama “master/main”. En caso de tener conflicto soluciónalos.
