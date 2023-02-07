@@ -1,7 +1,7 @@
 // Reto 8
 // • Guardar la clase Contacts en un fichero con extensión .js (contacts.js).
 
-class Contact {
+class Contacts {
     constructor(){
         this.contactos = []
     }
@@ -14,5 +14,5 @@ class Contact {
 // }
 
 
-module.exports = {Contact};
+module.exports = {Contacts};
 
