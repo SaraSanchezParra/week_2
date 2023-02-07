@@ -14,53 +14,42 @@
 
 // Reto 5
 // Añadir el atributo hobbies a la clase Person, que es un array de strings, y crear un método denominado printHobbies, que muestre por consola las aficiones de la persona.
-class person {
-    constructor(hight, weight){
+class Person {
+    constructor(hight, weight, pelo, colorOjos, yearOfBirth, hobbies){
         this.altura = hight
         this.peso = weight
-        this.pelo
-        this.colorOjos
-        this.aNac
-        this.hobbies
-        this.estadoCivil
-        this.personalidad
+        this.pelo = pelo
+        this.colorOjos = colorOjos
+        this.yearOfBirth = yearOfBirth
+        this.hobbies = hobbies
+        
     }
     calcularIMC (){
         return (this.altura*2)/this.peso;
     }
-    calcularEdad(year){
-        return year - this.aNac
+    calcularEdad(){
+        let fechaActual = new Date ();
+        return fechaActual.getFullYear() - this.yearOfBirth;
     }
     printAll() {
         console.log("La altura es -" + this.altura);
         console.log("El peso es -" + this.peso);
-        console.log("La edad es -" + this.aNac)
+        console.log("La edad es -" + this.calcularEdad());
+        console.log("El color de pelo es-" + this.pelo);
+        console.log("El color de ojos es-" + this.colorOjos );
+       
+
     }
     
     printHobbies(){
+        console.log("Sus hobbies son -");
         for (let i = 0; i < this.hobbies.length; i++){
-            console.log("Sus hobbies son -" + this.hobbies[i]);
+            console.log (this.hobbies[i]);
         }
     }
 
  }
 
-// console.log("****IMC")
-
-// let ana = new person(1.80, 80);
-// console.log(ana.calcularIMC());
-
-// console.log("****AÑO NACIMIENTO")
-
-// ana.aNac = 1980;
-
-
-// console.log("****PRINT ALL");
-
-// ana.printAll();
-// ana.hobbies = ['Leer', 'Cantar', 'Bailar'];
-// ana.printHobbies();
-// console.log(ana.printAll)
 
 
 // Reto 6
@@ -71,4 +60,4 @@ class person {
 // • Crear un objeto de la clase Persona y probar todos sus atributos y métodos.
 // • Sube todos los cambios a tu rama “dia1”.
 
-module.exports = {person};
+module.exports = {Person};
