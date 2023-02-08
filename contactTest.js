@@ -14,7 +14,7 @@ juan.hobbies =['Nadar','Jugar'];
 let agenda = new Contacts();
 agenda.contactos.push(ana)
 agenda.contactos.push(juan) //es lo mismo que utilizar ,,console.log(agenda.contactos),,;
-agenda.printPersons();
+
 
 // for (let i=0; i<agenda.contactos.length; i++){
 //     console.log(agenda.contactos[i]);

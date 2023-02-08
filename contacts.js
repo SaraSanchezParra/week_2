@@ -1,6 +1,7 @@
 // Reto 8
 // • Guardar la clase Contacts en un fichero con extensión .js (contacts.js).
-
+//Crear un método llamado printPersons que imprima cada uno de los atributos de cada objeto Person.
+ 
 class Contacts {
     constructor(){
         this.contactos = []
@@ -14,7 +15,6 @@ class Contacts {
 
 
 
-//Crear un método llamado printPersons que imprima cada uno de los atributos de cada objeto Person.
 
 module.exports = {Contacts};
 
