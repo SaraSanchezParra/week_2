@@ -1,6 +1,3 @@
-
-
-
 // 1. Guardar estos retos en un nuevo fichero. Ej: buclesFor.ts
 // 2. Realizarunafunciónqueimprimalosnúmerosimparesexistenteshastaelnúmero indicado como parámetro de entrada.
 // La cabecera de la función tendrá el siguiente aspecto: function evenNumbers(num)
@@ -10,60 +7,45 @@
 // 5. Realizarunafunciónquetedevuelvalasumadelnumerodecaracteresdelaspalabras almacenadas en un array.
 // La cabecera de la función tendrá el siguiente aspecto: function add(myWords)
 // 6. SubirloscambiosaGitHub.
-console.log ("***IMPARES");
-function evenNumbers(num:number){
-    for (let i=1; i<num; i++){
+console.log("***IMPARES");
+function evenNumbers(num) {
+    for (var i = 1; i < num; i++) {
         if (i % 2 != 0) {
-            console.log(i)
+            console.log(i);
         }
     }
 }
-
 evenNumbers(10);
-
 console.log("*** REVERTIDO");
-
-
-function myRevert(myArr: number[]): number[] {
-    let reverseArray: number[] = [];
-    for (let i = myArr.length - 1; i >= 0; i--) {
+function myRevert(myArr) {
+    var reverseArray = [];
+    for (var i = myArr.length - 1; i >= 0; i--) {
         reverseArray.push(myArr[i]);
     }
     return reverseArray;
 }
-
-let myArray = [1, 2, 3, 4, 5];
+var myArray = [1, 2, 3, 4, 5];
 console.log(myRevert(myArray));
-
-
 console.log("****ARCOIRIS");
-
-
-function isRainbow(colors: string[]) {
-    let rainbowColors = ["rojo", "naranja", "amarillo", "verde", "añil", "azul", "violeta"];
-    for (let color of colors) {
-        let thisRainbow = rainbowColors.indexOf(color);
-        console.log(`El color ${color} ${thisRainbow ? "está" : "no está"} en el arcoiris.`);
+function isRainbow(colors) {
+    var rainbowColors = ["rojo", "naranja", "amarillo", "verde", "añil", "azul", "violeta"];
+    for (var _i = 0, colors_1 = colors; _i < colors_1.length; _i++) {
+        var color = colors_1[_i];
+        var thisRainbow = rainbowColors.indexOf(color);
+        console.log("El color ".concat(color, " ").concat(thisRainbow ? "está" : "no está", " en el arcoiris."));
     }
 }
-
-let colorsArray = ["verde", "rosa"];
+var colorsArray = ["verde", "rosa"];
 isRainbow(colorsArray);
-
 console.log("****SUMA");
-
-
-
-function add(myWords: string[]) : number {
-    let addition = 0;
-    for (let word of myWords) {
+function add(myWords) {
+    var addition = 0;
+    for (var _i = 0, myWords_1 = myWords; _i < myWords_1.length; _i++) {
+        var word = myWords_1[_i];
         addition += word.length;
     }
     return addition;
 }
-
-let myWordsArray = ["Estamos", "en", "Codenotch", "estudiando", "programación"];
-let result = add(myWordsArray);
-console.log(`El número de caracteres es ${result}`);
-
-
+var myWordsArray = ["Estamos", "en", "Codenotch", "estudiando", "programación"];
+var result = add(myWordsArray);
+console.log("El n\u00FAmero de caracteres es ".concat(result));
