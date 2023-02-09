@@ -65,5 +65,3 @@ function add(myWords: string[]) : number {
 let myWordsArray = ["Estamos", "en", "Codenotch", "estudiando", "programación"];
 let result = add(myWordsArray);
 console.log(`El número de caracteres es ${result}`);
-
-
