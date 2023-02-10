@@ -29,23 +29,23 @@ console.log(myRevert(myArray));
 console.log("****ARCOIRIS");
 function isRainbow(colors) {
     var rainbowColors = ["rojo", "naranja", "amarillo", "verde", "añil", "azul", "violeta"];
-    for (var _i = 0, colors_1 = colors; _i < colors_1.length; _i++) {
-        var color = colors_1[_i];
-        var thisRainbow = rainbowColors.indexOf(color);
-        console.log("El color ".concat(color, " ").concat(thisRainbow ? "está" : "no está", " en el arcoiris."));
+    for (var i = 0; i < colors.length; i++) {
+        if (rainbowColors.indexOf(colors[i]) != -1) {
+            console.log("".concat(colors[i], " est\u00E1 en el arcoiris"));
+        }
+        else {
+            console.log("".concat(colors[i], " no est\u00E1 en el arcoiris"));
+        }
     }
 }
-var colorsArray = ["verde", "rosa"];
-isRainbow(colorsArray);
+isRainbow(["rosa", "azul"]);
 console.log("****SUMA");
 function add(myWords) {
     var addition = 0;
-    for (var _i = 0, myWords_1 = myWords; _i < myWords_1.length; _i++) {
-        var word = myWords_1[_i];
-        addition += word.length;
+    for (var i = 0; i < myWords.length; i++) {
+        var caracteres = myWords[i].length;
+        addition += caracteres;
     }
     return addition;
 }
-var myWordsArray = ["Estamos", "en", "Codenotch", "estudiando", "programación"];
-var result = add(myWordsArray);
-console.log("El n\u00FAmero de caracteres es ".concat(result));
+console.log(add(["Juan", "Rosa"]));

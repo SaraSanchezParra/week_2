@@ -6,6 +6,37 @@
 // La cabecera de la función tendrá el siguiente aspecto: function startWithM(myNames)
 // 4. Subir los cambios a GitHub.
 
-function hasEven(myNums:number[]){
 
+
+function hasEven(myNums:number[]){
+    let i:number = 0;
+    let result:string = ""
+
+    while(i<myNums.length&&myNums[i] % 2 == 0){
+       myNums[i]
+        i++
+    }
+    if (i<myNums.length){
+
+    return result
 }
+}
+
+console.log(hasEven([2, 3, 1, 7]));
+
+
+console.log("****ARRAY NOMBRES")
+
+function starWithM(myNames:string[]):boolean{
+    let resultado:boolean = true;
+    let i= 0;
+    while(i<myNames.length && resultado == true){
+        if (myNames[i].charAt(0)!= 'M'){
+            resultado = false;
+        }
+        i++;
+    }
+    return resultado;
+}
+
+console.log(starWithM(["Margarita", "Miguel"]));

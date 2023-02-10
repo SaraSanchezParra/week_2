@@ -38,30 +38,28 @@ console.log(myRevert(myArray));
 
 console.log("****ARCOIRIS");
 
-
 function isRainbow(colors: string[]) {
-    let rainbowColors = ["rojo", "naranja", "amarillo", "verde", "añil", "azul", "violeta"];
-    for (let color of colors) {
-        let thisRainbow = rainbowColors.indexOf(color);
-        console.log(`El color ${color} ${thisRainbow ? "está" : "no está"} en el arcoiris.`);
+    let rainbowColors= ["rojo", "naranja", "amarillo", "verde", "añil", "azul", "violeta"];
+    for (let i = 0; i<colors.length; i++){
+        if (rainbowColors.indexOf(colors[i])!= -1){
+            console.log(`${colors[i]} está en el arcoiris`);
+    } else {
+            console.log(`${colors[i]} no está en el arcoiris`);
     }
-}
+        }
+    }
 
-let colorsArray = ["verde", "rosa"];
-isRainbow(colorsArray);
+isRainbow(["rosa", "azul"])
 
 console.log("****SUMA");
 
-
-
-function add(myWords: string[]) : number {
-    let addition = 0;
-    for (let word of myWords) {
-        addition += word.length;
+function add(myWords: string[]) {
+    let addition:number = 0;
+    for (let i=0; i<myWords.length; i++) {
+       let caracteres:number = myWords[i].length;
+       addition += caracteres //(addition=addition+caracteres)
     }
     return addition;
 }
 
-let myWordsArray = ["Estamos", "en", "Codenotch", "estudiando", "programación"];
-let result = add(myWordsArray);
-console.log(`El número de caracteres es ${result}`);
+console.log(add(["Juan", "Rosa"]))
