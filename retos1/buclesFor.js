@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add = void 0;
 // 1. Guardar estos retos en un nuevo fichero. Ej: buclesFor.ts
 // 2. Realizarunafunciónqueimprimalosnúmerosimparesexistenteshastaelnúmero indicado como parámetro de entrada.
 // La cabecera de la función tendrá el siguiente aspecto: function evenNumbers(num)
@@ -44,8 +47,9 @@ function add(myWords) {
     var addition = 0;
     for (var i = 0; i < myWords.length; i++) {
         var caracteres = myWords[i].length;
-        addition += caracteres;
+        addition += caracteres; //(addition=addition+caracteres)
     }
     return addition;
 }
+exports.add = add;
 console.log(add(["Juan", "Rosa"]));

@@ -1,3 +1,4 @@
+"use strict";
 // Retos de Condicionales
 // 1. Trabajar en la rama repaso1 .En una carpeta nueva. Ej: retos1. Guarda estos retos en un fichero .js Ej: condicionales.ts
 // 2. Realizar una función que dada una fecha de nacimiento te devuelva el signo zodiacal. La fecha de nacimiento vendrá indicada por dos números: dia y mes.
@@ -9,6 +10,8 @@
 // - “El numero es impar”, si el numero introducido como parámetro de entrada es impar
 // 5. La cabecera de la función tendrá el siguiente aspecto: function isEven(number)
 // 6. SubirloscambiosaGitHub.
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isEven = void 0;
 function zodiac(day, month) {
     var signoAstral = "";
     if ((day >= 22 && month == 12) || (day <= 20 && month == 1)) {
@@ -78,4 +81,5 @@ function isEven(number) {
         console.log("El número es impar");
     }
 }
+exports.isEven = isEven;
 isEven(4);

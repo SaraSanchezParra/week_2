@@ -53,7 +53,7 @@ isRainbow(["rosa", "azul"])
 
 console.log("****SUMA");
 
-function add(myWords: string[]) {
+ export function add(myWords: string[]) {
     let addition:number = 0;
     for (let i=0; i<myWords.length; i++) {
        let caracteres:number = myWords[i].length;

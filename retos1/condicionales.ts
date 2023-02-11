@@ -102,7 +102,7 @@ console.log("****PAR O IMPAR");
 
 
 
-function isEven(number:number){
+export function isEven(number:number){
     if (number % 2 == 0){
         console.log("El número  es par")
     }
