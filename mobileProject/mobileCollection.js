@@ -5,6 +5,7 @@ var MobileCollection = /** @class */ (function () {
     function MobileCollection() {
         this.mobiles = [];
         this.totalPrice = 0;
+        this.totalPriceCalculation = 0;
     }
     MobileCollection.prototype.getMobiles = function () {
         return this.mobiles;
@@ -13,15 +14,21 @@ var MobileCollection = /** @class */ (function () {
         this.mobiles = moviles;
     };
     MobileCollection.prototype.getTotalPrice = function () {
-        var suma = 0;
-        for (var i = 0; i < this.mobiles.length; i++) {
-            suma = suma + this.mobiles[i].getPrice();
-        }
-        this.totalPrice = suma;
         return this.totalPrice;
     };
     MobileCollection.prototype.setTotalPrice = function (precioTotal) {
         this.totalPrice = precioTotal;
+    };
+    MobileCollection.prototype.getTotalPriceCalculation = function () {
+        var suma = 0;
+        for (var i = 0; i < this.mobiles.length; i++) {
+            suma = suma + this.mobiles[i].getPrice();
+        }
+        this.totalPriceCalculation = suma;
+        return this.totalPriceCalculation;
+    };
+    MobileCollection.prototype.setTotalPriceCalculation = function () {
+        this.totalPriceCalculation = this.totalPriceCalculation;
     };
     return MobileCollection;
 }());

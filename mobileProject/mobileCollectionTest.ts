@@ -4,6 +4,12 @@
 // 7. Crear un objeto myCollection de la clase MobileCollection, asignarle el array que habéis creado previamente y comprobar todos sus métodos.
 // 8. SubirloscambiosaGitHub.
 
+// 1. Crear un método privado denominado totalPriceCalculation sin parámetros de entrada, que te calcule el precio total de la colección.
+// NOTA: Debe realizar la suma de los precios de todos los objetos almacenados en el atributo mobiles.
+// 2. EnelconstructorllamartotalPriceCalculationyguardarloensuatributocorrespondiente.
+// 3. ProbardenuevoelmétodogetPricedelaclaseenelficheromobileCollectionTest.ts
+// 4. SubirloscambiosaGitHub.
+
 
 import { MobileCollection } from "./mobileCollection";
 
@@ -29,5 +35,5 @@ myCollection.setMobiles(arrayMobiles1);
 
 
 
-console.log(myCollection.getTotalPrice());
+console.log(myCollection.getTotalPriceCalculation());
 

@@ -13,10 +13,12 @@ import { Mobile } from "./mobile"
 export class MobileCollection {
     private mobiles: Mobile[];
     private totalPrice: number;
+    private totalPriceCalculation:number;
 
     constructor (){
         this.mobiles = [];
         this.totalPrice = 0;
+        this.totalPriceCalculation = 0;
 
     }
 
@@ -27,16 +29,22 @@ export class MobileCollection {
         this.mobiles = moviles; 
     }
     public getTotalPrice(){
-        let suma = 0; 
-        for(let i = 0; i<this.mobiles.length; i++){
-            suma = suma + this.mobiles[i].getPrice();
-        }
-        this.totalPrice = suma
         return this.totalPrice ;
     }
     public setTotalPrice(precioTotal:number):void{
         this.totalPrice = precioTotal;
     
+    }
+    public getTotalPriceCalculation(){
+        let suma = 0; 
+        for(let i = 0; i<this.mobiles.length; i++){
+            suma = suma + this.mobiles[i].getPrice();
+        }
+        this.totalPriceCalculation = suma;
+        return this.totalPriceCalculation
+    }
+    public setTotalPriceCalculation(){
+        this.totalPriceCalculation = this.totalPriceCalculation;
     }
 
 }
