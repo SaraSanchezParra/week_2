@@ -12,6 +12,7 @@
 // - mult(v1:Vector):Vector. Realiza el producto de elements y v1.
 // - multNumber(n:number):Vector. Realiza el producto entre elements y el número n.
 
+// terminarrrrrrr!!!! by Menchu!!!
 class Vector {
     private elements: Number[];
     
