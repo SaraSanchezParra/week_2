@@ -30,10 +30,11 @@ arrayMobiles1.push(myMobile2);
 arrayMobiles1.push(myMobile3);
 arrayMobiles1.push(myMobile4);
 
-let myCollection = new MobileCollection();
-myCollection.setMobiles(arrayMobiles1);
+let myCollection: MobileCollection = new MobileCollection(arrayMobiles1);
+// myCollection.setMobiles(arrayMobiles1);
 
 
 
-console.log(myCollection.getTotalPriceCalculation());
+console.log(myCollection.totalPriceCalculation());
 
+console.log(myCollection.printCollection())
