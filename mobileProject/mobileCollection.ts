@@ -13,39 +13,40 @@ import { Mobile } from "./mobile"
 export class MobileCollection {
     private mobiles: Mobile[];
     private totalPrice: number;
-    private totalPriceCalculation:number;
 
-    constructor (){
-        this.mobiles = [];
-        this.totalPrice = 0;
-        this.totalPriceCalculation = 0;
+
+    constructor (Mobiles: Mobile[]){
+        this.mobiles = Mobiles;
+        this.totalPrice = this.totalPriceCalculation()
+        ;
 
     }
 
-    public getMobiles(){
+    public getMobiles(): Mobile[]{
         return this.mobiles;
     }
-    public setMobiles(moviles:Mobile[]):void{
-        this.mobiles = moviles; 
+    public setMobiles(mobiles:Mobile[]):void{
+        this.mobiles = mobiles; 
     }
-    public getTotalPrice(){
+    public getTotalPrice():number{
         return this.totalPrice ;
     }
     public setTotalPrice(precioTotal:number):void{
-        this.totalPrice = precioTotal;
-    
+        this.totalPrice = this.totalPrice
     }
-    public getTotalPriceCalculation(){
+    public totalPriceCalculation(): number{
         let suma = 0; 
         for(let i = 0; i<this.mobiles.length; i++){
             suma = suma + this.mobiles[i].getPrice();
         }
-        this.totalPriceCalculation = suma;
-        return this.totalPriceCalculation
+    
+        return suma
     }
-    public setTotalPriceCalculation(){
-        this.totalPriceCalculation = this.totalPriceCalculation;
-    }
-
+    public printCollection(){
+        for (let movil of this.mobiles){
+            console.log(movil.printPattern())
+        }
+        console.log("Price overall: " + this.getTotalPrice())
+        }
 }
 

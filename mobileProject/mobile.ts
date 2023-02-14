@@ -62,9 +62,9 @@ export class Mobile {
     public setPrice(price:number):void{
         this.price = price;
     }
-    // public allMobiles()
+    
 
-    public toString():string{
+    public printPattern():string{
         return `The characteristics of the mobile name are: \n ·Name: ${this.name}\n ·Trademark: ${this.trademark}\n ·Model: ${this.model}\n ·Color: ${this.color}\n ·Price: ${this.price}\n`;
    
     }
