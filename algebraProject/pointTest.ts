@@ -10,3 +10,4 @@ console.log(myPoint.toString());
 
 myPoint.CalculateDistance(myPoint2);
 console.log(myPoint.CalculateDistance(myPoint2));
+console.log(myPoint.calcularQuadrant())

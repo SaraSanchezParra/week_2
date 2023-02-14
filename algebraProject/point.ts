@@ -44,7 +44,25 @@ export class Point {
         let diferenciaDeY = this.getY() - anotherPoint.getY();
         return Math.sqrt((diferenciaDeX * diferenciaDeX) + (diferenciaDeY * diferenciaDeY))
     }
-    // public calcularQuadrant():number
+    public calcularQuadrant():number{
+        let variable:number = 0;
+        if (this.getX() ==0 || this.getY() ==0 ){
+            return variable = 0;
+        }
+        else if (this.getX() > 0 && this.getY() > 0){
+            variable = 1;
+        }
+        else if (this.getX() < 0 && this.getY() > 0){
+            variable = 2;
+        }
+        else if (this.getX() > 0 && this.getY() > 0){
+            variable = 3;
+        }
+        else if (this.getX() > 0 && this.getY() < 0){
+            variable = 4;
+        }
+        return variable
+    }
 }
 
 // Reto 2: Métodos de Distancias
