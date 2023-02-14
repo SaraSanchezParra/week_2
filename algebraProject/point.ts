@@ -44,8 +44,7 @@ export class Point {
         let diferenciaDeY = this.getY() - anotherPoint.getY();
         return Math.sqrt((diferenciaDeX * diferenciaDeX) + (diferenciaDeY * diferenciaDeY))
     }
-    // public calcularQuadrant():number
-    
+
 }
 
 // Reto 2: Métodos de Distancias
@@ -73,16 +72,3 @@ export class Point {
 // NOTA: Utilizar para ello el método calculateDistance implementado en el reto3.
 // 2. ModificarelficheropointTest.tsparaprobarestenuevométodo.
 // 3. SubirloscambiosaGitHub.
-
-// Reto 5: Clase Triangle con Typescript
-// 1. Dentro de la carpeta actual crear el fichero triangle.ts. Importar en dicho fichero la clase Point.
-// 2. DichoficherodebecontenerlaclaseTriangleconlossiguientesatributosprivados:
-// • vertex1: • vertex2: • vertex3:
-// Point Point Point
-// Que corresponden a los vértices de un triángulo.
-// 3. Elconstructordelaclasedebetenerlosmismosparámetrosdeentradaqueatributos.
-// 4. ProgramaelmétodocalculateLengthSides():number[]quedebedevolverunarraydetresposiciones, cada una de las cuales debe ser la longitud de uno de los lados del triángulo.
-// NOTA: Para ello es importante usar el método calculateDistance de la clase Point.
-// 5. EnotroficherodenominadotriangleTest.tsimportarlaclaseTriangle.
-// 6. CrearunnuevoobjetomyTriangledelaclaseTriangle,enelficheroanterior,yprobartodossus métodos. Subir los cambios a GitHub. Haced merge con la rama main.
-
