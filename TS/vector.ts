@@ -13,15 +13,62 @@
 // - multNumber(n:number):Vector. Realiza el producto entre elements y el número n.
 
 // terminarrrrrrr!!!! by Menchu!!!
-class Vector {
-    private elements: Number[];
+export class Vector {
+    private elements: number[];
     
 
-    constructor(n:number, k:number){
-     
+    constructor(longitud:number, maxVector:number){
+     this.elements = [];
+     for(let i = 0; i < longitud; i++){
+        this.elements.push(Math.round(Math.random() * maxVector))
+     }
 
     }
+
+    public print(){
+        return this.elements
+    }
+    public add1(v1:Vector):Vector{
+        let vectorPrincipal:Vector = new Vector(0, 0);
+        if (v1.elements.length == this.elements.length){
+            for(let i = 0; i < this.elements.length; i++){
+                vectorPrincipal.elements.push(this.elements[i] + v1.elements[i]) 
+            }
+        }
+        return vectorPrincipal
+    }
+    public subs(v1:Vector):Vector{
+        let vectorPrincipal:Vector = new Vector(0, 0);
+        if (v1.elements.length == this.elements.length){
+            for(let i = 0; i < this.elements.length; i++){
+                vectorPrincipal.elements.push(this.elements[i] - v1.elements[i]) 
+            }
+        }
+        return vectorPrincipal
+    }
+    public mult(v1:Vector):Vector{
+        let vectorPrincipal:Vector = new Vector(0, 0);
+        if (v1.elements.length == this.elements.length){
+            for(let i = 0; i < this.elements.length; i++){
+                vectorPrincipal.elements.push(this.elements[i] * v1.elements[i]) 
+            }
+        }
+        return vectorPrincipal
+    }
+    public multNumber(longitud:number):Vector{
+        let vectorPrincipal:Vector = new Vector(0, 0);
+        if (longitud == this.elements.length){
+            for(let i = 0; i < this.elements.length; i++){
+                vectorPrincipal.elements.push(this.elements[i] * longitud) 
+            }
+        }
+        return vectorPrincipal
+ 
+ }
 }
+
+
+
 
 //Créame un vector de 0 números a K//En el propio constructor igual que damos un valor,
 // podemos crear cosas. El array de elementos tiene que estar dentro del constructor
