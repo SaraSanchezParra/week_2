@@ -45,6 +45,7 @@ export class Point {
         return Math.sqrt((diferenciaDeX * diferenciaDeX) + (diferenciaDeY * diferenciaDeY))
     }
     // public calcularQuadrant():number
+    
 }
 
 // Reto 2: Métodos de Distancias
