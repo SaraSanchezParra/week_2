@@ -34,9 +34,17 @@ export class Point {
     }
 
     public toString():string{
-        return "(" + this.x + "," + this.y + ")";
+        return "(" + this.getX() + "," + this.getY() + ")";
     }
-
+    public distanceToOrigin():number{
+        return Math.sqrt(this.getX()**2 + this.getY()**2)
+    }
+    public CalculateDistance(anotherPoint:Point):number{
+        let diferenciaDeX = this.getX() - anotherPoint.getX();
+        let diferenciaDeY = this.getY() - anotherPoint.getY();
+        return Math.sqrt((diferenciaDeX * diferenciaDeX) + (diferenciaDeY * diferenciaDeY))
+    }
+    // public calcularQuadrant():number
 }
 
 // Reto 2: Métodos de Distancias
